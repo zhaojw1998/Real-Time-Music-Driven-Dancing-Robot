@@ -3,7 +3,6 @@
 3DMPPE_POSENET_RELEASE//output/model_dump/*
 dance_videos/*
 danceprimitives/*
-Final Report Latex Source Code/*
 MyNao/motion_glance/*
 *.png
 *.npy

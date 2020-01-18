@@ -1,0 +1,113 @@
+\begin{thebibliography}{10}
+
+\bibitem{ge2008facial}
+S.~S. Ge, C.~Wang, and C.~C. Hang, ``Facial expression imitation in human robot
+  interaction,'' in {\em RO-MAN 2008-The 17th IEEE International Symposium on
+  Robot and Human Interactive Communication}, pp.~213--218, IEEE, 2008.
+
+\bibitem{zhang2018real}
+Z.~Zhang, Y.~Niu, Z.~Yan, and S.~Lin, ``Real-time whole-body imitation by
+  humanoid robots and task-oriented teleoperation using an analytical mapping
+  method and quantitative evaluation,'' {\em Applied Sciences}, vol.~8, no.~10,
+  p.~2005, 2018.
+
+\bibitem{lei2015whole}
+J.~Lei, M.~Song, Z.-N. Li, and C.~Chen, ``Whole-body humanoid robot imitation
+  with pose similarity evaluation,'' {\em Signal Processing}, vol.~108,
+  pp.~136--146, 2015.
+
+\bibitem{zhangreal}
+Z.~Zhang, Y.~Niu, L.~Kong, S.~Lin, and H.~Wang, ``A real-time upper-body robot
+  imitation system,''
+
+\bibitem{kim2009stable}
+S.~Kim, C.~Kim, B.~You, and S.~Oh, ``Stable whole-body motion generation for
+  humanoid robots to imitate human motions,'' in {\em 2009 IEEE/RSJ
+  International Conference on Intelligent Robots and Systems}, pp.~2518--2524,
+  IEEE, 2009.
+
+\bibitem{nakaoka2003generating}
+S.~Nakaoka, A.~Nakazawa, K.~Yokoi, H.~Hirukawa, and K.~Ikeuchi, ``Generating
+  whole body motions for a biped humanoid robot from captured human dances,''
+  in {\em 2003 IEEE International Conference on Robotics and Automation (Cat.
+  No. 03CH37422)}, vol.~3, pp.~3905--3910, IEEE, 2003.
+
+\bibitem{koenemann2014real}
+J.~Koenemann, F.~Burget, and M.~Bennewitz, ``Real-time imitation of human
+  whole-body motions by humanoids,'' in {\em 2014 IEEE International Conference
+  on Robotics and Automation (ICRA)}, pp.~2806--2812, IEEE, 2014.
+
+\bibitem{geppert2004qrio}
+L.~Geppert, ``Qrio, the robot that could,'' {\em Ieee Spectrum}, vol.~41,
+  no.~5, pp.~34--37, 2004.
+
+\bibitem{nakaoka2005task}
+S.~Nakaoka, A.~Nakazawa, F.~Kanehiro, K.~Kaneko, M.~Morisawa, and K.~Ikeuchi,
+  ``Task model of lower body motion for a biped humanoid robot to imitate human
+  dances,'' in {\em 2005 IEEE/RSJ International Conference on Intelligent
+  Robots and Systems}, pp.~3157--3162, IEEE, 2005.
+
+\bibitem{crick2006synchronization}
+C.~Crick, M.~Munz, and B.~Scassellati, ``Synchronization in social tasks:
+  Robotic drumming,'' in {\em ROMAN 2006-The 15th IEEE International Symposium
+  on Robot and Human Interactive Communication}, pp.~97--102, IEEE, 2006.
+
+\bibitem{bock2016robod}
+S.~Bock, F.~Krebs, A.~Durand, S.~Poll, and R.~Balsyte, ``Robod: a real-time
+  online beat and offbeat drummer,'' 2016.
+
+\bibitem{murata2008robot}
+K.~Murata, K.~Nakadai, K.~Yoshii, R.~Takeda, T.~Torii, H.~G. Okuno,
+  Y.~Hasegawa, and H.~Tsujino, ``A robot uses its own microphone to synchronize
+  its steps to musical beats while scatting and singing,'' in {\em 2008
+  IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  pp.~2459--2464, IEEE, 2008.
+
+\bibitem{schollig2010synchronizing}
+A.~Sch{\"o}llig, F.~Augugliaro, S.~Lupashin, and R.~D'Andrea, ``Synchronizing
+  the motion of a quadrocopter to music,'' in {\em 2010 IEEE International
+  Conference on Robotics and Automation}, pp.~3355--3360, IEEE, 2010.
+
+\bibitem{bi2018real}
+T.~Bi, P.~Fankhauser, D.~Bellicoso, and M.~Hutter, ``Real-time dance generation
+  to music for a legged robot,'' in {\em 2018 IEEE/RSJ International Conference
+  on Intelligent Robots and Systems (IROS)}, pp.~1038--1044, IEEE, 2018.
+
+\bibitem{hutter2016anymal}
+M.~Hutter, C.~Gehring, D.~Jud, A.~Lauber, C.~D. Bellicoso, V.~Tsounis,
+  J.~Hwangbo, K.~Bodie, P.~Fankhauser, M.~Bloesch, {\em et~al.}, ``Anymal-a
+  highly mobile and dynamic quadrupedal robot,'' in {\em 2016 IEEE/RSJ
+  International Conference on Intelligent Robots and Systems (IROS)},
+  pp.~38--44, IEEE, 2016.
+
+\bibitem{rohmercoppeliasim}
+E.~Rohmer, S.~P. Singh, and M.~Freese, ``Coppeliasim (formerly v-rep): a
+  versatile and scalable robot simulation framework,''
+
+\bibitem{rohmer2013v}
+E.~Rohmer, S.~P. Singh, and M.~Freese, ``V-rep: A versatile and scalable robot
+  simulation framework,'' in {\em 2013 IEEE/RSJ International Conference on
+  Intelligent Robots and Systems}, pp.~1321--1326, IEEE, 2013.
+
+\bibitem{bock2014multi}
+S.~B{\"o}ck, F.~Krebs, and G.~Widmer, ``A multi-model approach to beat tracking
+  considering heterogeneous music styles.,'' in {\em ISMIR}, pp.~603--608,
+  2014.
+
+\bibitem{redmon2018yolov3}
+J.~Redmon and A.~Farhadi, ``Yolov3: An incremental improvement,'' {\em arXiv
+  preprint arXiv:1804.02767}, 2018.
+
+\bibitem{moon2019camera}
+G.~Moon, J.~Y. Chang, and K.~M. Lee, ``Camera distance-aware top-down approach
+  for 3d multi-person pose estimation from a single rgb image,'' in {\em
+  Proceedings of the IEEE International Conference on Computer Vision},
+  pp.~10133--10142, 2019.
+
+\bibitem{bock2016madmom}
+S.~B{\"o}ck, F.~Korzeniowski, J.~Schl{\"u}ter, F.~Krebs, and G.~Widmer,
+  ``Madmom: A new python audio and music signal processing library,'' in {\em
+  Proceedings of the 24th ACM international conference on Multimedia},
+  pp.~1174--1178, ACM, 2016.
+
+\end{thebibliography}

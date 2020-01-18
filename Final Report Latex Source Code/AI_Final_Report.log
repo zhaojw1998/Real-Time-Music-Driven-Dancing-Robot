@@ -1,0 +1,1126 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.8)  31 DEC 2019 09:03
+entering extended mode
+**"c:/Users/lenovo/Desktop/AI Project Porfolio/Final Report Latex Source Code/AI_Final_Report.tex"
+("c:/Users/lenovo/Desktop/AI Project Porfolio/Final Report Latex Source Code/AI_Final_Report.tex"
+LaTeX2e <2018-04-01> patch level 5
+("D:\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("D:\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\ctex.sty" ("D:\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+Package: expl3 2018-11-19 L3 programming layer (loader) 
+ ("D:\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
+Package: expl3 2018-11-19 L3 programming layer (code)
+\c_max_int=\count88
+\l_tmpa_int=\count89
+\l_tmpb_int=\count90
+\g_tmpa_int=\count91
+\g_tmpb_int=\count92
+\g__kernel_prg_map_int=\count93
+\c_log_iow=\count94
+\l_iow_line_count_int=\count95
+\l__iow_line_target_int=\count96
+\l__iow_one_indent_int=\count97
+\l__iow_indent_int=\count98
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count99
+\l__intarray_loop_int=\count100
+\c__intarray_sp_dim=\dimen109
+\g__intarray_font_int=\count101
+\c__fp_leading_shift_int=\count102
+\c__fp_middle_shift_int=\count103
+\c__fp_trailing_shift_int=\count104
+\c__fp_big_leading_shift_int=\count105
+\c__fp_big_middle_shift_int=\count106
+\c__fp_big_trailing_shift_int=\count107
+\c__fp_Bigg_leading_shift_int=\count108
+\c__fp_Bigg_middle_shift_int=\count109
+\c__fp_Bigg_trailing_shift_int=\count110
+\c__kernel_randint_max_int=\count111
+\g__fp_array_int=\count112
+\l__fp_array_loop_int=\count113
+\l__sort_length_int=\count114
+\l__sort_min_int=\count115
+\l__sort_top_int=\count116
+\l__sort_max_int=\count117
+\l__sort_true_max_int=\count118
+\l__sort_block_int=\count119
+\l__sort_begin_int=\count120
+\l__sort_end_int=\count121
+\l__sort_A_int=\count122
+\l__sort_B_int=\count123
+\l__sort_C_int=\count124
+\l__tl_analysis_normal_int=\count125
+\l__tl_analysis_index_int=\count126
+\l__tl_analysis_nesting_int=\count127
+\l__tl_analysis_type_int=\count128
+\l__regex_internal_a_int=\count129
+\l__regex_internal_b_int=\count130
+\l__regex_internal_c_int=\count131
+\l__regex_balance_int=\count132
+\l__regex_group_level_int=\count133
+\l__regex_mode_int=\count134
+\c__regex_cs_in_class_mode_int=\count135
+\c__regex_cs_mode_int=\count136
+\l__regex_catcodes_int=\count137
+\l__regex_default_catcodes_int=\count138
+\c__regex_catcode_D_int=\count139
+\c__regex_catcode_S_int=\count140
+\c__regex_catcode_L_int=\count141
+\c__regex_catcode_O_int=\count142
+\c__regex_catcode_A_int=\count143
+\c__regex_all_catcodes_int=\count144
+\l__regex_show_lines_int=\count145
+\l__regex_min_state_int=\count146
+\l__regex_max_state_int=\count147
+\l__regex_left_state_int=\count148
+\l__regex_right_state_int=\count149
+\l__regex_capturing_group_int=\count150
+\l__regex_min_pos_int=\count151
+\l__regex_max_pos_int=\count152
+\l__regex_curr_pos_int=\count153
+\l__regex_start_pos_int=\count154
+\l__regex_success_pos_int=\count155
+\l__regex_curr_char_int=\count156
+\l__regex_curr_catcode_int=\count157
+\l__regex_last_char_int=\count158
+\l__regex_case_changed_char_int=\count159
+\l__regex_curr_state_int=\count160
+\l__regex_step_int=\count161
+\l__regex_min_active_int=\count162
+\l__regex_max_active_int=\count163
+\l__regex_replacement_csnames_int=\count164
+\l__regex_match_count_int=\count165
+\l__regex_min_submatch_int=\count166
+\l__regex_submatch_int=\count167
+\l__regex_zeroth_submatch_int=\count168
+\g__regex_trace_regex_int=\count169
+\c_empty_box=\box26
+\l_tmpa_box=\box27
+\l_tmpb_box=\box28
+\g_tmpa_box=\box29
+\g_tmpb_box=\box30
+\l__box_top_dim=\dimen110
+\l__box_bottom_dim=\dimen111
+\l__box_left_dim=\dimen112
+\l__box_right_dim=\dimen113
+\l__box_top_new_dim=\dimen114
+\l__box_bottom_new_dim=\dimen115
+\l__box_left_new_dim=\dimen116
+\l__box_right_new_dim=\dimen117
+\l__box_internal_box=\box31
+\l__coffin_internal_box=\box32
+\l__coffin_internal_dim=\dimen118
+\l__coffin_offset_x_dim=\dimen119
+\l__coffin_offset_y_dim=\dimen120
+\l__coffin_x_dim=\dimen121
+\l__coffin_y_dim=\dimen122
+\l__coffin_x_prime_dim=\dimen123
+\l__coffin_y_prime_dim=\dimen124
+\c_empty_coffin=\box33
+\l__coffin_aligned_coffin=\box34
+\l__coffin_aligned_internal_coffin=\box35
+\l_tmpa_coffin=\box36
+\l_tmpb_coffin=\box37
+\l__coffin_display_coffin=\box38
+\l__coffin_display_coord_coffin=\box39
+\l__coffin_display_pole_coffin=\box40
+\l__coffin_display_offset_dim=\dimen125
+\l__coffin_display_x_dim=\dimen126
+\l__coffin_display_y_dim=\dimen127
+\g__file_internal_ior=\read1
+\l__coffin_bounding_shift_dim=\dimen128
+\l__coffin_left_corner_dim=\dimen129
+\l__coffin_right_corner_dim=\dimen130
+\l__coffin_bottom_corner_dim=\dimen131
+\l__coffin_top_corner_dim=\dimen132
+\l__coffin_scaled_total_height_dim=\dimen133
+\l__coffin_scaled_width_dim=\dimen134
+\l__seq_internal_a_int=\count170
+\l__seq_internal_b_int=\count171
+) ("D:\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
+File: l3pdfmode.def 2018-11-19 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count172
+))
+Package: ctex 2018/05/02 v2.4.14 Chinese adapter in LaTeX (CTEX)
+ ("D:\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
+Package: xparse 2018-10-17 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count173
+\g__xparse_grabber_int=\count174
+\l__xparse_m_args_int=\count175
+\l__xparse_mandatory_args_int=\count176
+\l__xparse_v_nesting_int=\count177
+) ("D:\Programs\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\ctexhook.sty"
+Package: ctexhook 2018/05/02 v2.4.14 Document and package hooks (CTEX)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\ctexpatch.sty"
+Package: ctexpatch 2018/05/02 v2.4.14 Patching commands (CTEX)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\base\fix-cm.sty"
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+ ("D:\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+ ("D:\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))) ("D:\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\l__ctex_tmp_int=\count178
+\l__ctex_tmp_box=\box41
+\l__ctex_tmp_dim=\dimen135
+\g__ctex_font_size_flag=\count179
+ ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\config\ctexopts.cfg"
+File: ctexopts.cfg 2018/05/02 v2.4.14 Option configuration file (CTEX)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\engine\ctex-engine-pdftex.def"
+File: ctex-engine-pdftex.def 2018/05/02 v2.4.14 (pdf)LaTeX adapter (CTEX)
+ ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\CJKutf8.sty"
+Package: CJKutf8 2015/04/18 4.8.4
+ ("D:\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+) ("D:\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+) ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\CJK.sty"
+Package: CJK 2015/04/18 4.8.4
+ ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\mule\MULEenc.sty"
+Package: MULEenc 2015/04/18 4.8.4
+) ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\CJK.enc"
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box42
+) ("D:\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+)) ("D:\Programs\MiKTeX 2.9\tex\latex\cjkpunct\CJKpunct.sty"
+Package: CJKpunct 2016/05/14 4.8.4
+\CJKpunct@cnta=\count180
+\CJKpunct@cntb=\count181
+\CJKpunct@cntc=\count182
+\CJKpunct@cntd=\count183
+\CJKpunct@cnte=\count184
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2026 (decimal 8230)
+ ("D:\Programs\MiKTeX 2.9\tex\latex\cjkpunct\CJKpunct.spa")) ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\CJKspace.sty"
+Package: CJKspace 2015/04/18 3.8.0
+) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\ctexspa.def"
+File: ctexspa.def 2018/05/01 v2.4.14 Space info for CJKpunct (CTEX)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\CJKfntef.sty"
+Package: CJKfntef 2015/04/18 4.8.4
+ ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\CJKulem.sty"
+Package: CJKulem 2015/04/18 4.8.4
+ ("D:\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
+\UL@box=\box43
+\UL@hyphenbox=\box44
+\UL@skip=\skip49
+\UL@hook=\toks16
+\UL@height=\dimen136
+\UL@pe=\count185
+\UL@pixel=\dimen137
+\ULC@box=\box45
+Package: ulem 2012/05/18
+\ULdepth=\dimen138
+)
+\UL@lastkern=\dimen139
+\CJK@skip=\skip50
+)
+\CJK@fntefSkip=\skip51
+\CJK@nest=\count186
+\CJK@fntefDimen=\dimen140
+\CJK@underdotBox=\box46
+\CJK@ULbox=\box47
+\CJK@underanyskip=\dimen141
+)
+\ccwd=\dimen142
+\l__ctex_ccglue_skip=\skip52
+)
+\l__ctex_ziju_dim=\dimen143
+ ("D:\Programs\MiKTeX 2.9\tex\latex\zhnumber\zhnumber.sty"
+Package: zhnumber 2018/01/28 v2.6 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count187
+\l__zhnum_byte_min_int=\count188
+\l__zhnum_byte_max_int=\count189
+ ("D:\Programs\MiKTeX 2.9\tex\latex\zhnumber\zhnumber-utf8.cfg"
+File: zhnumber-utf8.cfg 2018/01/28 v2.6 Chinese numerals with UTF8 encoding
+)) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\scheme\ctex-scheme-chinese.def"
+File: ctex-scheme-chinese.def 2018/05/02 v2.4.14 Chinese scheme for generic (CTEX)
+ ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\config\ctex-name-utf8.cfg"
+File: ctex-name-utf8.cfg 2018/05/02 v2.4.14 Caption with encoding UTF8 (CTEX)
+)) ("D:\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\ctex-c5size.clo"
+File: ctex-c5size.clo 2018/05/02 v2.4.14 c5size option (CTEX)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\fontset\ctex-fontset-windows.def"
+File: ctex-fontset-windows.def 2018/05/02 v2.4.14 Windows fonts definition (CTEX)
+ ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\fontset\ctex-fontset-windowsnew.def"
+File: ctex-fontset-windowsnew.def 2018/05/02 v2.4.14 Windows fonts definition for Vista or later version (CTEX)
+ ("D:\Programs\MiKTeX 2.9\tex\generic\ctex\zhwindowsfonts.tex"
+File: zhwindowsfonts.tex 2018/05/01 v2.4.14 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
+{C:/Users/lenovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}{UGBK.sfd}{Unicode.sfd})))) ("D:\Programs\MiKTeX 2.9\tex\latex\ctex\config\ctex.cfg"
+File: ctex.cfg 2018/05/02 v2.4.14 Configuration file (CTEX)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip53
+\bibsep=\skip54
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count190
+) ("D:\Programs\MiKTeX 2.9\tex\latex\ccaption\ccaption.sty"
+Package: ccaption 2011/08/07 v3.2c Extended captioning and new floats
+\@contcwidth=\skip55
+\@contindw=\skip56
+\abovelegendskip=\skip57
+\belowlegendskip=\skip58
+\c@newflo@tctr=\count191
+) ("D:\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen144
+\lightrulewidth=\dimen145
+\cmidrulewidth=\dimen146
+\belowrulesep=\dimen147
+\belowbottomsep=\dimen148
+\aboverulesep=\dimen149
+\abovetopsep=\dimen150
+\cmidrulesep=\dimen151
+\cmidrulekern=\dimen152
+\defaultaddspace=\dimen153
+\@cmidla=\count192
+\@cmidlb=\count193
+\@aboverulesep=\dimen154
+\@belowrulesep=\dimen155
+\@thisruleclass=\count194
+\@lastruleclass=\count195
+\@thisrulewidth=\dimen156
+) ("D:\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+ ("D:\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) ("D:\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) ("D:\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
+\Gm@bindingoffset=\dimen157
+\Gm@wd@mp=\dimen158
+\Gm@odd@mp=\dimen159
+\Gm@even@mp=\dimen160
+\Gm@layoutwidth=\dimen161
+\Gm@layoutheight=\dimen162
+\Gm@layouthoffset=\dimen163
+\Gm@layoutvoffset=\dimen164
+\Gm@dimlist=\toks18
+ ("D:\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")) ("D:\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box48
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen165
+\ttl@minus=\dimen166
+\ttl@toksa=\toks19
+\titlewidth=\dimen167
+\titlewidthlast=\dimen168
+\titlewidthfirst=\dimen169
+) ("D:\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) ("D:\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+ ("D:\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen170
+\captionmargin@=\dimen171
+\captionwidth=\dimen172
+\caption@tempdima=\dimen173
+\caption@indent=\dimen174
+\caption@parindent=\dimen175
+\caption@hangindent=\dimen176
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\let \@conttempa \relax \ifdim \prevdepth >-99\p@ \vskip \abovecaptionskip \else \def \@conttempa {\vbox to\topskip {}}\fi \let \@contfnote \footnote \renewcommand {\footnote }[2][]{} \let \@contfmark \footnotemark \renewcommand {\footnotemark }[1][]{} \let \@contlabel \label \renewcommand {\label }[1]{} \sbox \@tempboxa {\@contnfont #1\@contdelim \@conttfont #2} \let \footnote \@contfnote \let \footnotemark \@contfmark \let \label \@contlabel \ifdim \wd \@tempboxa <\linewidth \centering \fi \if@contcw \centering \parbox {\@contcwidth }{\fi \if@conthang \sbox \@tempboxa {\@contnfont #1\@contdelim } \@contpre {\@contnfont #1\@contdelim }\@conttempa {\@contcstyle \hangindent =\wd \@tempboxa \hangafter =\@ne \@conttfont #2\par } \else \if@contindent \@contpre {\@contnfont #1\@contdelim }\@conttempa {\@contcstyle \hangindent =\@contindw \hangafter =\@ne \@conttfont #2\par } \else \@contpre {\@contnfont #1\@contdelim }\@conttempa {\@contcstyle \@conttfont #2\par } \fi \fi \@contpost \if@contcw \par } \fi \vskip \belowcaptionskip .
+\c@caption@flags=\count199
+\c@ContinuedFloat=\count266
+) ("D:\Programs\MiKTeX 2.9\tex\latex\datetime\datetime.sty"
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ ("D:\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count267
+) ("D:\Programs\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.sty"
+Package: fmtcount 2017/12/24 v3.05
+ ("D:\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ ("D:\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex" ("D:\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count268
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) ("D:\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.sty"
+Package: fcprefix 2012/09/28
+ ("D:\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcnumparser.sty"
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count269
+)) ("D:\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen177
+)
+\c@padzeroesN=\count270
+\fc@tmpcatcode=\count271
+\@DT@modctr=\count272
+\@ordinalctr=\count273
+\@orgargctr=\count274
+\@strctr=\count275
+\@tmpstrctr=\count276
+\@DT@loopN=\count277
+\@DT@X=\count278
+) ("D:\Programs\MiKTeX 2.9\tex\latex\datetime\datetime-defaults.sty"
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count279
+\@month=\count280
+\@year=\count281
+\c@HOUR=\count282
+\c@HOURXII=\count283
+\c@MINUTE=\count284
+\c@TOHOUR=\count285
+\c@TOMINUTE=\count286
+\c@SECOND=\count287
+\currenthour=\count288
+\currentminute=\count289
+\currentsecond=\count290
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count291
+\dayofyear=\count292
+\dayofweek=\count293
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks23
+\dt@b=\toks24
+) ("D:\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ ("D:\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ ("D:\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ ("D:\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen178
+\Gin@req@width=\dimen179
+) ("D:\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip61
+\subfigcapskip=\skip62
+\subfigcaptopadj=\dimen180
+\subfigbottomskip=\skip63
+\subfigcapmargin=\dimen181
+\subfiglabelskip=\skip64
+\c@subfigure=\count294
+\c@lofdepth=\count295
+\c@subtable=\count296
+\c@lotdepth=\count297
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("D:\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip65
+\subfig@bottom=\skip66
+) ("D:\Programs\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count298
+\algocf@hangindent=\skip67
+ ("D:\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count299
+) ("D:\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\relsize\relsize.sty"
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip68
+\skiplinenumber=\skip69
+\skiprule=\skip70
+\skiphlne=\skip71
+\skiptext=\skip72
+\skiplength=\skip73
+\algomargin=\skip74
+\skipalgocfslide=\skip75
+\algowidth=\dimen182
+\inoutsize=\dimen183
+\inoutindent=\dimen184
+\interspacetitleruled=\dimen185
+\interspacealgoruled=\dimen186
+\interspacetitleboxruled=\dimen187
+\algocf@ruledwidth=\skip76
+\algocf@inoutbox=\box49
+\algocf@inputbox=\box50
+\AlCapSkip=\skip77
+\AlCapHSkip=\skip78
+\algoskipindent=\skip79
+\algocf@nlbox=\box51
+\algocf@hangingbox=\box52
+\algocf@untilbox=\box53
+\algocf@skipuntil=\skip80
+\algocf@capbox=\box54
+\algocf@lcaptionbox=\skip81
+\algoheightruledefault=\skip82
+\algoheightrule=\skip83
+\algotitleheightruledefault=\skip84
+\algotitleheightrule=\skip85
+\c@algocfline=\count300
+\c@algocfproc=\count301
+\c@algocf=\count302
+\algocf@algoframe=\box55
+\algocf@algobox=\box56
+) ("D:\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip86
+
+For additional information on amsmath, use the `?' option.
+("D:\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+) ("D:\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen188
+) ("D:\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count303
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count304
+\leftroot@=\count305
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count306
+\DOTSCASE@=\count307
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box57
+\strutbox@=\box58
+\big@size=\dimen189
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count308
+\c@MaxMatrixCols=\count309
+\dotsspace@=\muskip17
+\c@parentequation=\count310
+\dspbrk@lvl=\count311
+\tag@help=\toks25
+\row@=\count312
+\column@=\count313
+\maxfields@=\count314
+\andhelp@=\toks26
+\eqnshift@=\dimen190
+\alignsep@=\dimen191
+\tagshift@=\dimen192
+\tagwidth@=\dimen193
+\totwidth@=\dimen194
+\lineht@=\dimen195
+\@envbody=\toks27
+\multlinegap=\skip87
+\multlinetaggap=\skip88
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) ("D:\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+ ("D:\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ ("D:\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) ("D:\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen196
+\Hy@linkcounter=\count315
+\Hy@pagecounter=\count316
+ ("D:\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count317
+ ("D:\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4393.
+ ("D:\Programs\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count318
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen197
+\Fld@menulength=\count319
+\Field@Width=\dimen198
+\Fld@charsize=\dimen199
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count320
+\c@Item=\count321
+\c@Hfootnote=\count322
+)
+Package hyperref Info: Driver: hpdftex.
+ ("D:\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count323
+\c@bookmark@seq@number=\count324
+ ("D:\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip89
+) ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\UTF8\UTF8.bdg"
+File: UTF8.bdg 2015/04/18 4.8.4
+) ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\UTF8\UTF8.enc"
+File: UTF8.enc 2015/04/18 4.8.4
+) ("D:\Programs\MiKTeX 2.9\tex\latex\cjk\UTF8\UTF8.chr"
+File: UTF8.chr 2015/04/18 4.8.4
+) (AI_Final_Report.aux)
+\openout1 = `AI_Final_Report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 66.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(90.47955pt, 416.54877pt, 90.47955pt)
+* v-part:(T,H,B)=(72.2698pt, 700.50723pt, 72.2698pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.54877pt
+* \textheight=700.50723pt
+* \oddsidemargin=18.20956pt
+* \evensidemargin=18.20956pt
+* \topmargin=-37.00018pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+("D:\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-english.def"
+File: fc-english.def 2016/01/12
+) ("D:\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count325
+\scratchdimen=\dimen256
+\scratchbox=\box59
+\nofMPsegments=\count326
+\nofMParguments=\count327
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen257
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
+\everyMPtoPDFconversion=\toks30
+) ("D:\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ ("D:\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 66.
+ ("D:\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ ("D:\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count331
+)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
+ (AI_Final_Report.out) (AI_Final_Report.out)
+\@outlinefile=\write3
+\openout3 = `AI_Final_Report.out'.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 69.
+ ("D:\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <9.03374> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 69.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 69.
+
+
+Overfull \hbox (0.25002pt too wide) in paragraph at lines 69--69
+[] $[]$ 
+ []
+
+("D:\Programs\MiKTeX 2.9\tex\generic\ctex\zhwindowsfonts.tex"
+File: zhwindowsfonts.tex 2018/05/01 v2.4.14 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
+) [1
+
+]
+
+pdfTeX warning: pdflatex (file ./overall_diagram.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<overall_diagram.pdf, id=92, 561.80893pt x 252.15405pt>
+File: overall_diagram.pdf Graphic file (type pdf)
+<use overall_diagram.pdf>
+Package pdftex.def Info: overall_diagram.pdf  used on input line 96.
+(pdftex.def)             Requested size: 337.08795pt x 151.2936pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.108 
+       [2 <./overall_diagram.pdf>]
+
+pdfTeX warning: pdflatex (file ./pose_estimation.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<pose_estimation.pdf, id=124, 508.55698pt x 126.2587pt>
+File: pose_estimation.pdf Graphic file (type pdf)
+<use pose_estimation.pdf>
+Package pdftex.def Info: pose_estimation.pdf  used on input line 117.
+(pdftex.def)             Requested size: 355.98744pt x 88.38048pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.127 
+       [3 <./pose_estimation.pdf>]
+
+pdfTeX warning: pdflatex (file ./ankle_mapping_2.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ankle_mapping_2.pdf, id=148, 222.61368pt x 245.29643pt>
+File: ankle_mapping_2.pdf Graphic file (type pdf)
+<use ankle_mapping_2.pdf>
+Package pdftex.def Info: ankle_mapping_2.pdf  used on input line 136.
+(pdftex.def)             Requested size: 124.9659pt x 137.69818pt.
+
+
+pdfTeX warning: pdflatex (file ./ankle_mapping_1.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ankle_mapping_1.pdf, id=149, 255.84784pt x 244.76846pt>
+File: ankle_mapping_1.pdf Graphic file (type pdf)
+<use ankle_mapping_1.pdf>
+Package pdftex.def Info: ankle_mapping_1.pdf  used on input line 141.
+(pdftex.def)             Requested size: 141.62505pt x 135.49329pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.157 
+       [4 <./ankle_mapping_2.pdf> <./ankle_mapping_1.pdf
+
+pdfTeX warning: pdflatex (file ./ankle_mapping_1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.53937> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.176 	\end{itemize}
+                     [5]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 
+       [6]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.241 	\begin{equation}
+                        [7]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.275 		\item T
+               he humanoid robot, Nao, keeps its feet parallel to the ground... [8]
+<demo_motion_selection.png, id=259, 710.1732pt x 177.7842pt>
+File: demo_motion_selection.png Graphic file (type png)
+<use demo_motion_selection.png>
+Package pdftex.def Info: demo_motion_selection.png  used on input line 282.
+(pdftex.def)             Requested size: 390.59647pt x 97.78159pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.294 
+       [9 <./demo_motion_selection.png>]
+<real-time_error.png, id=270, 462.528pt x 302.0886pt>
+File: real-time_error.png Graphic file (type png)
+<use real-time_error.png>
+Package pdftex.def Info: real-time_error.png  used on input line 299.
+(pdftex.def)             Requested size: 187.44566pt x 122.42818pt.
+<change_song.png, id=271, 462.528pt x 302.0886pt>
+File: change_song.png Graphic file (type png)
+<use change_song.png>
+Package pdftex.def Info: change_song.png  used on input line 304.
+(pdftex.def)             Requested size: 187.44566pt x 122.42818pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 
+       [10 <./real-time_error.png> <./change_song.png>] (AI_Final_Report.bblpdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 
+      [11])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.332 \end{document}
+                     [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
+ (AI_Final_Report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
+Package rerunfilecheck Info: File `AI_Final_Report.out' has not changed.
+(rerunfilecheck)             Checksum: 331FD0F804162A3E240E6BE6543791F8;2037.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.41063pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 25976 strings out of 492969
+ 433523 string characters out of 3138049
+ 523052 words of memory out of 3000000
+ 29459 multiletter control sequences out of 15000+200000
+ 539778 words of font info for 49 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,18n,77p,1135b,639s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on AI_Final_Report.pdf (12 pages, 1361778 bytes).
+PDF statistics:
+ 359 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+
