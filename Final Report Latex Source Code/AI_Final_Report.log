@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.8)  31 DEC 2019 09:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.8)  21 JAN 2020 21:02
 entering extended mode
-**"c:/Users/lenovo/Desktop/AI Project Porfolio/Final Report Latex Source Code/AI_Final_Report.tex"
-("c:/Users/lenovo/Desktop/AI Project Porfolio/Final Report Latex Source Code/AI_Final_Report.tex"
+**"c:/Users/lenovo/Desktop/AI-Project-Portfolio/Final Report Latex Source Code/AI_Final_Report.tex"
+("c:/Users/lenovo/Desktop/AI-Project-Portfolio/Final Report Latex Source Code/AI_Final_Report.tex"
 LaTeX2e <2018-04-01> patch level 5
 ("D:\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1111,12 +1111,12 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  25976 strings out of 492969
- 433523 string characters out of 3138049
+ 433533 string characters out of 3138049
  523052 words of memory out of 3000000
  29459 multiletter control sequences out of 15000+200000
  539778 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,18n,77p,1135b,639s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,18n,77p,1136b,639s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on AI_Final_Report.pdf (12 pages, 1361778 bytes).
 PDF statistics:
