@@ -1,8 +1,11 @@
 #from speed_control import Speed_Controller, Speed_Controller_and_Motion_Actuator
 #from motion_select import Motion_Selector
 #from online_beat_extract import beat_extractor
+import sys
+sys.path.append('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\simulation and check sequence validity')
 
 from multiprocessing import Process, Queue
+from angel_transmit import init_joint
 from angel_transmit import joint_actuate
 from manage_joints import get_first_handles
 import time
@@ -62,6 +65,7 @@ if __name__ == '__main__':
                 cluster_id = int(key)
                 break
         if time.time()-time1 > 5:
+            init_joint(clientID, Body, motion, frame)
             sim.simxStopSimulation(clientID, sim.simx_opmode_oneshot)
             #sim.simxFinish(clientID)
             
