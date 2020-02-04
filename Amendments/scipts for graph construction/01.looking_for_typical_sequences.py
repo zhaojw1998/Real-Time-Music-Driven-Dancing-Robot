@@ -1,7 +1,7 @@
 import pickle
 from tqdm import tqdm
 import sys
-with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\primitive_compact.txt', 'rb') as f:
+with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\00.primitive_compact.txt', 'rb') as f:
     primitive_compact = pickle.load(f)
 
 typical_sequences = {}

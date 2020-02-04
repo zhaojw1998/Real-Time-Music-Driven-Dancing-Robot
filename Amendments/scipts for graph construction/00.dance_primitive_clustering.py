@@ -42,7 +42,7 @@ print(primitive_shrink)
 assert(len(set(primitive_shrink)) == len(set(clusters)))
 print(len(set(primitive_shrink)))
 
-with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\primitive_compact.txt', 'wb') as f:
+with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\00.primitive_compact.txt', 'wb') as f:
     pickle.dump(primitive_shrink, f)
 """
 plt.figure(figsize=(50, 10))
