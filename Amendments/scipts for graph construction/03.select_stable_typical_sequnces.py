@@ -42,5 +42,5 @@ for Key in stable_typical_sequences[::-1]:  #supress [2,3,4,1] if [1,2,3,4] alre
 
 print(stable_typical_sequence_redundant_supress)
 print(len(stable_typical_sequence_redundant_supress))
-with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\03.stable_typical_sequence_redundant_supress.txt', 'wb') as f:
-    pickle.dump(stable_typical_sequence_redundant_supress, f)
+#with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\03.stable_typical_sequence_redundant_supress.txt', 'wb') as f:
+#    pickle.dump(stable_typical_sequence_redundant_supress, f)

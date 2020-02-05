@@ -22,12 +22,13 @@ for sequence in stable_typical_sequence_redundant_supress:
 #print(states_in_typical_sequence, len(states_in_typical_sequence), sequence_head, len(sequence_head))
 sequence_tail = []
 for sequence in stable_typical_sequence_redundant_supress:
-    sequence_head.append(sequence[-1])
+    sequence_tail.append(sequence[-1])
     
 transition_states = []
 for state in list(set(primitive_compact)):
     if state not in states_in_typical_sequence or state in sequence_head or state in sequence_tail:
         transition_states.append(state)
+#print(sequence_head, sequence_tail)
 transition_state_idx_dict = {}
 for idx, state in enumerate(transition_states):
     transition_state_idx_dict[state] = idx
@@ -39,14 +40,14 @@ for i in range(adjacency_matrix.shape[0]):
     for option in next_options:
         if option in transition_state_idx_dict:
             adjacency_matrix[i][transition_state_idx_dict[option]] = 1
+#print(np.sum(adjacency_matrix, axis=1))
 for state in sequence_head:
     adjacency_matrix[:, transition_state_idx_dict[state]] = 1
-for states in sequence_tail:
+#print(np.sum(adjacency_matrix, axis=1))
+for state in sequence_tail:
     adjacency_matrix[transition_state_idx_dict[state], :] = 1
-
-#print(adjacency_matrix)
-
-
+#print(np.sum(adjacency_matrix, axis=1))
+print(adjacency_matrix)
 with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\05.adjacency_matrix_and_transition_states.txt', 'wb') as f:
     pickle.dump(adjacency_matrix, f)
     pickle.dump(transition_states, f)

@@ -17,11 +17,15 @@ for idx, state in enumerate(state_set):
     state_idx_dict[state] = idx
 #print(state_idx_dict)
 incidence_matrix = np.empty((0, len(state_set)), dtype='<U10')
-interface = []
+interface = {}
+interface['layer'] = []
+interface['entrance'] = []
 for sequence in stable_typical_sequence_redundant_supress:
     explored_set = [sequence[0]]
     hyperedge = np.zeros(len(state_set), dtype='<U10')
-    interface.append(state_idx_dict[sequence[0]])
+    #interface.append(state_idx_dict[sequence[0]])
+    interface['layer'].append(incidence_matrix.shape[0])
+    interface['entrance'].append(state_idx_dict[sequence[0]])
     for idx in range(len(sequence)-1):
         if not sequence[idx+1] in explored_set:
             hyperedge[state_idx_dict[sequence[idx]]] = state_idx_dict[sequence[idx+1]]
@@ -36,10 +40,13 @@ for sequence in stable_typical_sequence_redundant_supress:
     incidence_matrix = np.vstack((incidence_matrix, hyperedge))
 print(incidence_matrix)
 print(interface)
+#print(state_idx_dict)
 
 with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\04.incidence_matrix_and_interface.txt', 'wb') as f:
     pickle.dump(incidence_matrix, f)
     pickle.dump(interface, f)
+    pickle.dump(state_idx_dict, f)
+    pickle.dump(state_set, f)
 
 
         
