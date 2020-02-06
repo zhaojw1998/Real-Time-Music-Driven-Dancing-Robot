@@ -58,7 +58,7 @@ while True:
             returnCode, position=sim.simxGetObjectPosition(clientID, Body['HeadYaw'], -1, sim.simx_opmode_buffer)
             time.sleep(0.03)
             if position[2] < 0.4 and position[2] > 0:   #fall down
-                print('fall down')
+                #print('fall down')
                 sim.simxStopSimulation(clientID, sim.simx_opmode_oneshot)
                 time.sleep(.1)
                 sys.exit()
@@ -82,7 +82,7 @@ while True:
             returnCode, position=sim.simxGetObjectPosition(clientID, Body['HeadYaw'], -1, sim.simx_opmode_buffer)
             time.sleep(0.03)
             if position[2] < 0.4 and position[2] > 0:   #fall down
-                print('fall down')
+                #print('fall down')
                 sim.simxStopSimulation(clientID, sim.simx_opmode_oneshot)
                 time.sleep(.1)
                 sys.exit()
