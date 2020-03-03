@@ -40,11 +40,14 @@ sim.simxStartSimulation(clientID, sim.simx_opmode_oneshot)
 Body = {}
 get_first_handles(clientID,Body)
 returnCode, position=sim.simxGetObjectPosition(clientID, Body['HeadYaw'], -1, sim.simx_opmode_streaming)
+returnCode, position=sim.simxGetObjectPosition(clientID, Body['LAnklePitch'], -1, sim.simx_opmode_streaming)
 current_state = 0
 mode = 0
 layer = 0
 while True:
     print(mode, current_state)
+    returnCode, position_=sim.simxGetObjectPosition(clientID, Body['LAnklePitch'], -1, sim.simx_opmode_buffer)
+    print('LAnklePitch position:', position_)
     if mode == 0:
         primitive = np.load('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\danceprimitives\\'+'{0}'.format(str(current_state).zfill(4))+'\\dance_motion_'+str(current_state)+'.npy')
         primitive = primitive.reshape(-1, 17, 3)

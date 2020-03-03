@@ -59,7 +59,7 @@ def joint_actuate(clientID, Body, motion, frame):
     control('RKneePitch', RKP)
     control('LAnkleRoll', LAR)
     control('RAnkleRoll', RAR)
-    #control('LAnklePitch', LAP)
+    #zcontrol('LAnklePitch', LAP)
     #control('RAnklePitch', RAP)
     control('RHipYawPitch', -1*RHP)
     control('LHipYawPitch', -1*LHP)

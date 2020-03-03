@@ -149,7 +149,7 @@ def main():
     preds = []
     with torch.no_grad():
         itr = 1 # iteration
-        imgpath = 'C:\\Users\\lenovo\\Desktop\\3DMPPE_POSENET_RELEASE\\image\\test.jpg'
+        imgpath = 'C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\image\\test.jpg'
         # imgpath = '/data1/cx/project/3DMPPE_POSENET_RELEASE/image/test.jpg'
         bbox = (0, 0, 256, 256)
         input_img = prepare_input(imgpath, bbox)
