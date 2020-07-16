@@ -1,4 +1,4 @@
-from coordinate2angle import coordinate2angel
+from coordinate2angle import coordinate2angle
 from manage_joints import get_first_handles
 import numpy as np
 import os
@@ -29,7 +29,7 @@ def transmit(clientID, Body, angel):
     sim.simxSetJointTargetPosition(clientID, Body['RAnkleRoll'], angel[19], sim.simx_opmode_oneshot)
 
 if __name__ == '__main__':
-    converter = coordinate2angel()
+    converter = coordinate2angle()
     converter.bound('./danceprimitives_new', 32)
     #primitives = converter.loadBatchData_discretize('./danceprimitives_new', 16)#num_primitives*time_resolution*(num_joints*space_resolution)
     #np.save('primitive_data.npy', primitives)

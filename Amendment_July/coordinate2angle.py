@@ -8,7 +8,7 @@ from tqdm import tqdm
 from scipy import interpolate
 import sys
 
-class coordinate2angel(object):
+class coordinate2angle(object):
     def __init__(self):
         self.frame = 0#motion_frame
         self.spaceResolution = 100
@@ -16,6 +16,12 @@ class coordinate2angel(object):
         self.bound_range = 0
         self.step = 0
 
+    def set_bound(self, bound_range, step, space_resolution=32, time_resolution=16):
+        self.bound_range = bound_range
+        self.step = step
+        self.spaceResolution = space_resolution
+        self.timeResolution = time_resolution
+    
     def coordinate2angel_continuous(self, frame):
         """input: a motion frame in size (num_keypoints, 3)"""
         PI = np.pi
@@ -133,6 +139,8 @@ class coordinate2angel(object):
         self.spaceResolution = space_resolution
         self.bound_range = bound_range
         self.step = (self.bound_range[:, 1]-self.bound_range[:, 0])/(self.spaceResolution-1)
+        np.save('bound_range.npy', self.bound_range)
+        np.save('step', self.step)
 
     def coordinateModify(self, primitive):
         """input: one motion primitive in (numFrame, num_joints, 3), where 3 stands for coordinates (y, -z, -x). We convert it to (x, y, z)"""

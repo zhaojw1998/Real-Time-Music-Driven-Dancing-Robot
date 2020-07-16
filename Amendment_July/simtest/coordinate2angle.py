@@ -1,8 +1,8 @@
 import numpy as np
 from math import *
-from manage_joints import get_first_handles
+#from manage_joints import get_first_handles
 import os
-import sim
+#import sim
 import time
 from tqdm import tqdm
 from scipy import interpolate
@@ -101,11 +101,18 @@ class coordinate2angel(object):
         for sub_dir_idx in tqdm(range(len(os.listdir(library_dir)))):
             sub_dir = os.listdir(library_dir)[sub_dir_idx]
             file = os.path.join(library_dir, sub_dir) + '\\dance_motion_' + str(int(sub_dir)) + '.npy'
-            primitive = np.load(file).reshape((-1, 17, 3))  
+            try:
+                primitive = np.load(file).reshape((-1, 17, 3))
+            except FileNotFoundError:
+                print('empty file', sub_dir)
+                continue 
             #print(primitive[0])      
             next_sub_dir = os.listdir(library_dir)[(sub_dir_idx+1)%len(os.listdir(library_dir))]
             next_file = os.path.join(library_dir, next_sub_dir) + '\\dance_motion_' + str(int(next_sub_dir)) + '.npy'
-            next_primitive = np.load(next_file).reshape((-1, 17, 3))
+            try:
+                next_primitive = np.load(next_file).reshape((-1, 17, 3))
+            except FileNotFoundError:
+                continue
             primitive = np.concatenate((primitive, next_primitive[0][np.newaxis, :, :]), axis=0)
             #print(primitive[0])
             primitive_angle = np.zeros((primitive.shape[0], 17))
@@ -147,7 +154,10 @@ class coordinate2angel(object):
             #load angles for each frame of this primitive
             sub_dir = primitiveNames[idx]
             file = os.path.join(library_dir, sub_dir) + '\\dance_motion_' + str(int(sub_dir)) + '.npy'
-            primitive = np.load(file).reshape((-1, 17, 3))
+            try:
+                primitive = np.load(file).reshape((-1, 17, 3))
+            except FileNotFoundError:
+                continue
             primitiveAngles = np.zeros((primitive.shape[0]+1, 17))
             for frame in range(primitive.shape[0]):
                 frameAngles = self.coordinateModify(primitive[frame])
@@ -155,7 +165,10 @@ class coordinate2angel(object):
             #load angles for the first frame of the next frame
             next_sub_dir = primitiveNames[(idx+1)%len(primitiveNames)]
             next_file = os.path.join(library_dir, next_sub_dir) + '\\dance_motion_' + str(int(next_sub_dir)) + '.npy'
-            next_primitive = np.load(next_file).reshape((-1, 17, 3))
+            try:
+                next_primitive = np.load(next_file).reshape((-1, 17, 3))
+            except FileNotFoundError:
+                continue
             next_frameAngles = self.coordinateModify(next_primitive[0])
             primitiveAngles[-1, :] = np.array(self.coordinate2angel_continuous(next_frameAngles))
             #interpolate
@@ -207,13 +220,6 @@ class coordinate2angel(object):
             angles_recon.append(angle_recon)
             forward_step = 0
         return angles_recon
-
-    def batchRecon(self, batchData):
-        reconData = np.zeros((batchData.shape[0], batchData.shape[1], 17), dtype=batchData.dtype)
-        for idx_p in tqdm(range(batchData.shape[0])):
-            for idx_f in range(batchData.shape[1]):
-                reconData[idx_p, idx_f, :] = np.array(self.frameRecon(batchData[idx_p, idx_f, :]))
-        return reconData
 
     def rotation_matrix(self, axis, theta):
         """
@@ -304,51 +310,11 @@ class coordinate2angel(object):
 
             
 if __name__ == '__main__':
-    """ip = '127.0.0.1'
-    port = 19997
-    sim.simxFinish(-1)  # just in case, close all opened connections
-    clientID = sim.simxStart(ip, port, True, True, -5000, 5)
-    # Connect to V-REP
-    if clientID == -1:
-        import sys
-        sys.exit('\nV-REP remote API server connection failed (' + ip + ':' + str(port) + '). Is V-REP running?')
-    print('Connected to Remote API Server')  # show in the terminal
-
-    sim.simxStartSimulation(clientID, sim.simx_opmode_oneshot)
-    Body = {}
-    get_first_handles(clientID,Body)"""
 
     converter = coordinate2angel()
-    converter.bound('danceprimitives', 32)
-    a=converter.loadBatchData_discretize('danceprimitives', 16)
-    print(a.shape)
-    """
-    angle_encoded = converter.loadFrameData_discretize('3DMPPE_POSENET_RELEASE/main/coord_out.npy')
-    angle_recon =converter.frameRecon(angle_encoded[0])
-    LSP, LSR, LEY, LER, RSP, RSR, REY, RER, LHP, LHR, LHYP, LKP, RHP, RHR, RHYP, RKP, LAP, LAR, RAP, RAR = converter.generateWholeJoints(angle_recon)
+    converter.bound('danceprimitives_new', 32)
+    data=converter.loadBatchData_discretize('danceprimitives_new', 16)
+    print(data.shape)
+    np.save('dance_unit_data.npy', data)
 
-    def control(joint, angel):
-        sim.simxSetJointTargetPosition(clientID, Body[joint], angel, sim.simx_opmode_oneshot)
-
-    sim.simxPauseCommunication(clientID,1)
-    control('LShoulderPitch', LSP)
-    control('LShoulderRoll', LSR)
-    control('LElbowYaw', LEY)
-    control('LElbowRoll', LER)
-    control('RShoulderPitch', RSP)
-    control('RShoulderRoll', RSR)
-    control('RElbowYaw', REY)
-    control('RElbowRoll', RER)
-    control('LHipRoll', LHR)
-    control('LHipPitch', LHP)
-    control('LKneePitch', LKP)
-    control('RHipRoll',RHR)
-    control('RHipPitch', RHP)
-    control('RKneePitch', RKP)
-    control('LAnkleRoll', LAR)
-    control('RAnkleRoll', RAR)
-    control('LAnklePitch', LAP)
-    control('RAnklePitch', RAP)
-    control('RHipYawPitch', RHYP)
-    control('LHipYawPitch', LHYP)
-    sim.simxPauseCommunication(clientID,0)"""
+    
