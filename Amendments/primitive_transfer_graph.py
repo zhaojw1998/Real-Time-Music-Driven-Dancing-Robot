@@ -30,12 +30,12 @@ for cluster_id in range(1, len(set(clusters))+1):
     primitive_transfer_graph[str(cluster_id)]['include'] = cluster_i
     next_cluster_options = {}
     for primitive in cluster_i:
-        next_cluster_id = clusters[(int(primitive) + 1)%len(set(clusters))]
+        next_cluster_id = clusters[(int(primitive) + 1)%len(clusters)]
         if not str(next_cluster_id) in next_cluster_options:
             next_cluster_options[str(next_cluster_id)] = 0
         next_cluster_options[str(next_cluster_id)] += 1/len(cluster_i)
     primitive_transfer_graph[str(cluster_id)]['lead_to'] = next_cluster_options #sorted(next_cluster_options.items(), key=lambda item:item[1], reverse=False)
-#print(primitive_transfer_graph)
-with open('primitive_transfer_graph.json', 'w') as f:
-    json.dump(primitive_transfer_graph, f)
+print(primitive_transfer_graph)
+#with open('primitive_transfer_graph.json', 'w') as f:
+#    json.dump(primitive_transfer_graph, f)
     

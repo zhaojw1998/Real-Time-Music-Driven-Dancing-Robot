@@ -10,19 +10,19 @@ import sim
 import sys
 from tqdm import tqdm
 
-with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\03.stable_typical_sequence_redundant_supress.txt', 'rb') as f:
+with open('Amendments/scipts for graph construction/graph construction 0516/03.stable_typical_sequence_redundant_supress.txt', 'rb') as f:
     stable_typical_sequence_redundant_supress = pickle.load(f)
 sequence_head = []
 sequence_tail = []
 for sequence in stable_typical_sequence_redundant_supress:
     sequence_head.append(sequence[0])
     sequence_tail.append(sequence[-1])
-with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\04.incidence_matrix_and_interface.txt', 'rb') as f:
+with open('Amendments/scipts for graph construction/graph construction 0516/04.incidence_matrix_and_interface.txt', 'rb') as f:
     incidence_matrix = pickle.load(f)
     interface = pickle.load(f)
     state_idx_dict = pickle.load(f)
     state_set = pickle.load(f)
-with open('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\Amendments\\scipts for graph construction\\06.transition_graph.txt', 'rb') as f:
+with open('Amendments/scipts for graph construction/graph construction 0516/06.transition_graph.txt', 'rb') as f:
     transition_graph = pickle.load(f)
 
 
@@ -41,30 +41,37 @@ Body = {}
 get_first_handles(clientID,Body)
 returnCode, position=sim.simxGetObjectPosition(clientID, Body['HeadYaw'], -1, sim.simx_opmode_streaming)
 returnCode, position=sim.simxGetObjectPosition(clientID, Body['LAnklePitch'], -1, sim.simx_opmode_streaming)
-current_state = 0
+current_state = 3
 mode = 0
 layer = 0
 while True:
     print(mode, current_state)
     returnCode, position_=sim.simxGetObjectPosition(clientID, Body['LAnklePitch'], -1, sim.simx_opmode_buffer)
-    print('LAnklePitch position:', position_)
+    #print('LAnklePitch position:', position_)
     if mode == 0:
         primitive = np.load('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\danceprimitives\\'+'{0}'.format(str(current_state).zfill(4))+'\\dance_motion_'+str(current_state)+'.npy')
-        primitive = primitive.reshape(-1, 17, 3)
+        primitive_backup = primitive.reshape(-1, 17, 3)
+        #primitive_revised = np.empty((primitive_backup.shape[0], primitive_backup.shape[1], primitive_backup.shape[2]))
+        #primitive_revised[:, :, 0] = -primitive_backup[:, :, 1]
+        #primitive_revised[:, :, 1] = primitive_backup[:, :, 0]
+        #primitive_revised[:, :, 2] = -primitive_backup[:, :, 2]
+        #primitive = primitive_revised.reshape(-1, 51)
+        primitive = primitive_backup
         motion = {}
         for i in range(primitive.shape[0]):
             motion[str(i)] = {}
             for j in range(primitive.shape[1]):
-                motion[str(i)][str(j)] = [primitive[i][j][0], primitive[i][j][2], primitive[i][j][1]]
+                #motion[str(i)][str(j)] = [primitive[i][j][0], primitive[i][j][2], primitive[i][j][1]]
+                motion[str(i)][str(j)] = [-primitive[i][j][2], primitive[i][j][0], -primitive[i][j][1]]
         for frame in range(primitive.shape[0]):
             joint_actuate(clientID, Body, motion, frame)
             returnCode, position=sim.simxGetObjectPosition(clientID, Body['HeadYaw'], -1, sim.simx_opmode_buffer)
-            time.sleep(0.03)
-            if position[2] < 0.4 and position[2] > 0:   #fall down
+            time.sleep(0.01)
+            """if position[2] < 0.4 and position[2] > 0:   #fall down
                 #print('fall down')
                 sim.simxStopSimulation(clientID, sim.simx_opmode_oneshot)
                 time.sleep(.1)
-                sys.exit()
+                sys.exit()"""
         current_state = np.random.choice(transition_graph[current_state]['next'], p=np.array(transition_graph[current_state]['p']).ravel())
         #print('current:', current_state)
         if current_state in sequence_head:
@@ -74,7 +81,13 @@ while True:
             continue
     if mode == 1:
         primitive = np.load('C:\\Users\\lenovo\\Desktop\\AI-Project-Portfolio\\danceprimitives\\'+'{0}'.format(str(current_state).zfill(4))+'\\dance_motion_'+str(current_state)+'.npy')
-        primitive = primitive.reshape(-1, 17, 3)
+        primitive_backup = primitive.reshape(-1, 17, 3)
+        #primitive_revised = np.empty((primitive_backup.shape[0], primitive_backup.shape[1], primitive_backup.shape[2]))
+        #primitive_revised[:, :, 0] = -primitive_backup[:, :, 1]
+        #primitive_revised[:, :, 1] = primitive_backup[:, :, 0]
+        #primitive_revised[:, :, 2] = -primitive_backup[:, :, 2]
+        #primitive = primitive_revised.reshape(-1, 51)
+        primitive = primitive_backup
         motion = {}
         for i in range(primitive.shape[0]):
             motion[str(i)] = {}
@@ -83,12 +96,12 @@ while True:
         for frame in range(primitive.shape[0]):
             joint_actuate(clientID, Body, motion, frame)
             returnCode, position=sim.simxGetObjectPosition(clientID, Body['HeadYaw'], -1, sim.simx_opmode_buffer)
-            time.sleep(0.03)
-            if position[2] < 0.4 and position[2] > 0:   #fall down
+            time.sleep(0.1)
+            """if position[2] < 0.4 and position[2] > 0:   #fall down
                 #print('fall down')
                 sim.simxStopSimulation(clientID, sim.simx_opmode_oneshot)
                 time.sleep(.1)
-                sys.exit()
+                sys.exit()"""
         try:
             next_state = state_set[int(incidence_matrix[layer][state_idx_dict[current_state]])]
             current_state = next_state

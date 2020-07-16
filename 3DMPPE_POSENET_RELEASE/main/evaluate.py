@@ -169,9 +169,9 @@ def main():
     print('loading integral pose model elapse:',round(time_1-time_0,2),'s')
 
     ##loading yolo detector
-    detector = YOLOv3( model_def="C:\\users\\lenovo\\Desktop\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\common\\detectors\\yolo\\config\\yolov3.cfg",
-                       class_path="C:\\users\\lenovo\\Desktop\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\common\\detectors\\yolo\\data\\coco.names",
-                       weights_path="C:\\users\\lenovo\\Desktop\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\common\\detectors\\yolo\\weights\\yolov3.weights",
+    detector = YOLOv3( model_def="D:\\Robot Dance\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\common\\detectors\\yolo\\config\\yolov3.cfg",
+                       class_path="D:\\Robot Dance\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\common\\detectors\\yolo\\data\\coco.names",
+                       weights_path="D:\\Robot Dance\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\common\\detectors\\yolo\\weights\\yolov3.weights",
                        classes=('person',),
                        max_batch_size=16,
                        device=torch.device('cuda:{}'.format(cfg.gpu_ids[0])))
@@ -186,7 +186,7 @@ def main():
     preds = []
     if args.demo == 'image':
 
-        image_path = 'C:\\users\\lenovo\\Desktop\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\image\\test3.jpg'
+        image_path = 'D:\\Robot Dance\\AI-Project-Portfolio\\3DMPPE_POSENET_RELEASE\\image\\test_sample_20200711.jpg'
         raw_image = cv2.imread(image_path, cv2.IMREAD_COLOR | cv2.IMREAD_IGNORE_ORIENTATION)
         input_img = raw_image.copy()
 
@@ -226,10 +226,11 @@ def main():
 
             coord_out = coord_out.cpu().numpy()
             coord_out = coord_out * np.array([img_patch.shape[1]/cfg.input_shape[1], img_patch.shape[0]/cfg.input_shape[0], 1])
-            coord_out = (coord_out - np.mean(coord_out, axis = 1))/np.std(coord_out, axis = 1)
+            #coord_out = (coord_out - np.mean(coord_out, axis = 1))/np.std(coord_out, axis = 1)
+            coord_out = coord_out[:, :-1, :]
             print(coord_out)
             print(coord_out.shape)
-            np.save('coord_out.npy', coord_out)
+            np.save('coord_out_0711.npy', coord_out)
             vis_3d=True
             if vis_3d:
                 pred=coord_out.squeeze() #remove first batch dimension
@@ -240,7 +241,7 @@ def main():
         with open('motionFrame.json', 'w') as f:
             json.dump(motion_frame, f)
     elif args.demo == 'video':
-        video = cv2.VideoCapture('C:\\users\\lenovo\\Desktop\\AI-Project-Portfolio\\dance_videos\\test_sample.mp4')
+        video = cv2.VideoCapture('D:\\Robot Dance\\AI-Project-Portfolio\\dance_videos\\test_sample.mp4')
         ret_val, image = video.read()
         motion={}
         frame=0

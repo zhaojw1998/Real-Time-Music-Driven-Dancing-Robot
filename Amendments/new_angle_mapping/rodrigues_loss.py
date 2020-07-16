@@ -6,24 +6,34 @@ import matplotlib.pyplot as plt
 class RodriguesLoss(nn.Module):
     def __init__(self):
         super().__init__()
+
+    def rodrigues(self, v, k, theta):
+        return torch.cos(theta)*v + (1-torch.cos(theta))*(torch.dot(v, k))*k + torch.sin(theta)*torch.cross(k, v)
+
+    def normalized(self, v):
+        return v / torch.norm(v)
         
     def forward(self, angles, coordination): # angles: n × 22; coord_World: n × 51
         assert(angles.shape[0] == coordination.shape[0])
-        coordination.view(coordination.shape[0], -1, 3)
+        batch_size = coordination.shape[0]
+        #coordination.view(batch_size, -1, 3) # n × 17 × 3 for 3D coordinates of 17 key points
         total_loss = 0
-        for i in range(coordination.shape[0]):
+        for i in range(batch_size):
             """transfer world coordination to torso coordination"""
             coord_W = coordination[i]
-            torso_points = torch.stack((coord_W[0],coord_W[1],coord_W[4],coord_W[7],coord_W[8],coord_W[11],coord_W[14]), dim=0)
+            coord_W = coord_W.view(-1, 3)
+            #print(coord_W.shape)
+            torso_points = torch.stack((coord_W[0],coord_W[1],coord_W[4],coord_W[7],coord_W[8],coord_W[11],coord_W[14]), dim=0) # 7 × 3
+            #print(torso_points.shape)
             Y = torso_points[:, 2]
-            X = torch.stack((torso_points[:, 0], torso_points[:, 1], torch.tensor.ones(torso_points.shape[0])), dim = 1)
+            X = torch.stack((torso_points[:, 0], torso_points[:, 1], torch.from_numpy(np.ones(torso_points.shape[0])).float()), dim = 1)
             xt = torch.matmul(torch.matmul(torch.inverse(torch.matmul(X.t(), X)), X.t()), Y)
             xt[-1] = torch.tensor(-1)
             yt = torch.cross((coord_W[8] - coord_W[0]), xt)
             zt = torch.cross(xt, yt)
-            xt = xt / torch.norm(xt)
-            yt = yt / torch.norm(yt)
-            zt = zt / torch.norm(zt)
+            xt = self.normalized(xt)
+            yt = self.normalized(yt)
+            zt = self.normalized(zt)
             R_TW = torch.stack((xt, yt, zt), dim=0)     # coord_Torso = R_TW · coord_World
             coord_T = torch.matmul(coord_W, R_TW.t())
             x_T = torch.tensor([1.,0.,0.])
@@ -36,7 +46,7 @@ class RodriguesLoss(nn.Module):
             gt_1 = self.normalized(torch.cross(gt_0, torch.cross(coord_T[10]-coord_T[9], -gt_0)))
             v_HP = self.rodrigues(z_T, y_T, angle[0]) #*
             v_HY_pre = self.rodrigues(x_T, y_T, angle[0])
-            v_HY = self.rodrigues(v_HY_pre, self.normalized(coord_T[9]-coord_T[8]), angle[1]) #*
+            v_HY = self.rodrigues(v_HY_pre, v_HP, angle[1]) #*
             # Left arm
             gt_2 = self.normalized(coord_T[12]-coord_T[11])
             gt_3 = self.normalized(coord_T[13]-coord_T[12])
@@ -56,7 +66,7 @@ class RodriguesLoss(nn.Module):
             gt_7 = self.normalized(coord_T[6]-coord_T[5])
             v_LHP = self.rodrigues(-z_T, y_T, angle[10])
             k_LHR = self.rodrigues(x_T, y_T, angle[10])
-            k_LHYP = self.rodrigues(self.normalized(torch.tensor([0,1,-1])), y_T, angle[10])
+            k_LHYP = self.rodrigues(self.normalized(torch.tensor([0.,1.,-1.])), y_T, angle[10])
             v_LHR = self.rodrigues(v_LHP, k_LHR, angle[11])
             k_LHYP = self.rodrigues(k_LHYP, k_LHR, angle[11])
             v_LHYP = self.rodrigues(v_LHR, k_LHYP, angle[12]) #*
@@ -66,7 +76,7 @@ class RodriguesLoss(nn.Module):
             gt_9 = self.normalized(coord_T[3]-coord_T[2])
             v_RHP = self.rodrigues(-z_T, y_T, angle[14])
             k_RHR = self.rodrigues(x_T, y_T, angle[14])
-            k_RHYP = self.rodrigues(self.normalized(torch.tensor([0,1,1])), y_T, angle[14])
+            k_RHYP = self.rodrigues(self.normalized(torch.tensor([0.,1.,1.])), y_T, angle[14])
             v_RHR = self.rodrigues(v_RHP, k_RHR, angle[15])
             k_RHYP = self.rodrigues(k_RHYP, k_RHR, angle[15])
             v_RHYP = self.rodrigues(v_RHR, k_RHYP, angle[16]) #*
@@ -95,43 +105,4 @@ class RodriguesLoss(nn.Module):
             loss = torch.mean(torch.pow(gt-sim, 2))
             total_loss += loss
 
-            return total_loss
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-    def rodrigues(self, v, k, theta):
-        return torch.cos(theta)*v + (1-torch.cos(theta))*(torch.dot(v, k))*k + torch.sin(theta)*torch.cross(k, v)
-
-    def normalized(self, v):
-        return v / torch.norm(v)
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        return torch.mean(torch.pow((x - y), 2))
+        return total_loss / batch_size

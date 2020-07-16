@@ -58,7 +58,7 @@ def set_angel(motion, frame):
     y = np.cross(z, x)
     LH = np.array(motion[str(i)]['5']) - np.array(motion[str(i)]['4'])
     LHR = np.sign(np.dot(y, LH)) * np.arccos(np.dot(y, np.cross(x, LH))/(np.linalg.norm(y)*np.linalg.norm(np.cross(x, LH)))) * b
-    LHP = np.arccos(np.dot(x, LH)/(np.linalg.norm(x)*np.linalg.norm(LH))) - PI/2
+    LHP = -(np.arccos(np.dot(x, LH)/(np.linalg.norm(x)*np.linalg.norm(LH))) - PI/2)
 
     # for left knee
     LK = np.array(motion[str(i)]['6']) - np.array(motion[str(i)]['5'])
@@ -70,7 +70,7 @@ def set_angel(motion, frame):
     y = np.cross(z, x)
     RH = np.array(motion[str(i)]['2']) - np.array(motion[str(i)]['1'])
     RHR = np.sign(np.dot(y, RH)) * np.arccos(np.dot(y, np.cross(x, RH))/(np.linalg.norm(y)*np.linalg.norm(np.cross(x, RH)))) * b
-    RHP = np.arccos(np.dot(x, RH)/(np.linalg.norm(x)*np.linalg.norm(RH))) - PI/2
+    RHP = -(np.arccos(np.dot(x, RH)/(np.linalg.norm(x)*np.linalg.norm(RH))) - PI/2)
 
     # for right knee
     RK = np.array(motion[str(i)]['3']) - np.array(motion[str(i)]['2'])

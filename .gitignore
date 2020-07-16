@@ -3,6 +3,7 @@
 3DMPPE_POSENET_RELEASE//output/model_dump/*
 dance_videos/*
 danceprimitives/*
+danceprimitives_trial/*
 MyNao/motion_glance/*
 *.png
 *.npy
@@ -13,3 +14,6 @@ MyNao/motion_glance/*
 *.tar
 *.weights
 *.74
+*.txt
+*.jpg
+*.pt
