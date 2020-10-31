@@ -1,5 +1,18 @@
 # Humanoid Robot Dance Control over Real-Time Musc Stimulation
 
+## Amendment July 2020
+
+1) Apply **Unit Selection** for the incremental generation of robotic dance;
+2) Exploit **dot-product attention** to distinguish potential conflicts among the robot's joint angles, and there for predict its stability when a motion unit is performed.
+
+The amended codes are within folder **/Amendment July**.
+
+Jingwei Zhao
+
+Sept. 30, 2020
+
+
+----------------------------------------------------------------------------
 ## 1. Introduction to the Work
 
 This work is the project implementation for AU332 Aritificial Intelligence Lectures, SJTU, 2019 Autumn. It mainly implements four jobs:

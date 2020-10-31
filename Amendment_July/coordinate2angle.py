@@ -150,7 +150,7 @@ class coordinate2angle(object):
         primitive_modified[:, 2] = -primitive[:, 1]
         return primitive_modified
     
-    def loadBatchData_discretize(self, library_dir, time_resolution=16):
+    def loadBatchData_discretize(self, library_dir):
         """input: a motion libray directory which stores a number of motion primitives in npy."""
         if type(self.bound_range) == int:
             print("bound the range first!")
@@ -319,10 +319,11 @@ class coordinate2angle(object):
             
 if __name__ == '__main__':
 
-    converter = coordinate2angel()
-    converter.bound('danceprimitives_new', 32)
-    data=converter.loadBatchData_discretize('danceprimitives_new', 16)
+    converter = coordinate2angle()
+    #converter.bound(library_dir='danceprimitives_new', space_resolution=32, time_resolution=16)
+    converter.set_bound(bound_range=np.load('./bound_range.npy'), step=np.load('./step.npy'), space_resolution=32, time_resolution=16)
+    data=converter.loadBatchData_discretize(library_dir='../danceprimitives_new')
     print(data.shape)
-    np.save('dance_unit_data.npy', data)
+    #np.save('dance_unit_data.npy', data)
 
     

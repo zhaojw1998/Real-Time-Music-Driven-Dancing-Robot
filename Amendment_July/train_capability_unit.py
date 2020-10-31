@@ -12,7 +12,7 @@ from torch.nn import CrossEntropyLoss as CrossEntropy
 from torch.optim.lr_scheduler import ExponentialLR
 #from tensorboardX import SummaryWriter
 from torch.utils.tensorboard import SummaryWriter
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, Dataset
 from model import Capability_Naive, CapabilityWithAttention
 from coordinate2angle import coordinate2angle
 from manage_joints import get_first_handles
@@ -47,32 +47,24 @@ class AverageMeter(object):
         self.count += n
         self.avg = self.sum / self.count
 
-class data_loader(object):
-    def __init__(self, primitive_data):
-        self.primitives = primitive_data
-        self.dataVolumn = self.primitives.shape[0]
-        self.anchor = 0
-        self.randomCount = 0
-        self.randomExtent = 5
+class unit_data_loader(Dataset):
+    def __init__(self, primitive_data, ground_truth):
+        self.primitives = np.load(primitive_data)
+        self.ground_truth = np.load(ground_truth)
     
-    def get_data(self):
-        if self.randomCount == 0:
-            sequence_sample = np.concatenate((self.primitives[self.anchor], self.primitives[(self.anchor+1)%self.dataVolumn]), axis=0)
-            self.anchor = (self.anchor+1)%self.dataVolumn
-            self.randomCount += 1
-        else:
-            index1 = np.random.randint(0, self.dataVolumn)
-            index2 = np.random.randint(0, self.dataVolumn)
-            sequence_sample = np.concatenate((self.primitives[index1], self.primitives[index2]), axis=0)
-            self.randomCount = (self.randomCount+1)%self.randomExtent
-        return torch.from_numpy(sequence_sample[np.newaxis, :, :]).float()
-    
-    def get_steps(self):
-        return self.dataVolumn * self.randomExtent
+    def __getitem__(self, idx):
+        return self.primitives[idx], self.ground_truth[idx]
 
-def get_label(sequence_sample, converter, clientID, Body):
-    sequence_sample = sequence_sample[0]
-    for duration in [0.02, 0.05]:
+    def __len__(self):
+        return self.primitives.shape[0]
+
+def get_label(unit_data, converter, clientID, Body):    #1 for stable and 0  for fall down
+    labels = []
+    continue_flag = 0
+    duration = 0.03
+    for i in tqdm(range(unit_data.shape[0])):
+        sequence_sample = unit_data[i]
+        #for duration in [0.025, 0.035]:
         for idx_f in range(sequence_sample.shape[0]):
             angle_recon = converter.frameRecon(sequence_sample[idx_f])
             # angles: LSP, LSR, LEY, LER, RSP, RSR, REY, RER, LHP, LHR, LHYP, LKP, RHP, RHR, RHYP, RKP, LAP, LAR, RAP, RAR
@@ -85,43 +77,41 @@ def get_label(sequence_sample, converter, clientID, Body):
                 print('fall')
                 sim.simxStopSimulation(clientID, sim.simx_opmode_oneshot)
                 print('stop')
-                time.sleep(.1)
+                time.sleep(.3)
                 sim.simxStartSimulation(clientID, sim.simx_opmode_oneshot)
                 print('start')
-                time.sleep(.1)
-                #returnCode, position=sim.simxGetObjectPosition(clientID, Body['HeadYaw'], -1, sim.simx_opmode_streaming)
-                return torch.tensor([0]).long()
-        sim.simxStopSimulation(clientID, sim.simx_opmode_oneshot)
-        print('go on: stop')
-        time.sleep(.1)
-        sim.simxStartSimulation(clientID, sim.simx_opmode_oneshot)
-        print('go on: start')
-        time.sleep(.1)
-        #returnCode, position=sim.simxGetObjectPosition(clientID, Body['HeadYaw'], -1, sim.simx_opmode_streaming)
-    return torch.tensor([1]).long()
+                time.sleep(.5)
+                labels.append(0)
+                continue_flag = 1
+                break
+        if continue_flag:
+            continue_flag = 0
+            continue
+        labels.append(1)
+        time.sleep(.3)
+    labels = np.array(labels)
+    print(labels.shape, np.sum(labels==0))
+    np.save('unit_stability_labels.npy', np.array(labels))
 
-def train(model, dataloader, epoch, loss_function, optimizer, writer, scheduler, converter, clientID, Body):
+def train(model, dataloader, epoch, loss_function, optimizer, writer, scheduler):
     batch_time = AverageMeter()
     data_time = AverageMeter()
     losses = AverageMeter()
     end = time.time()
+    steps = len(dataloader)
 
     model.train()
-    steps = dataloader.get_steps()
-    for step in range(steps):
+    for step, (data_sample, target) in enumerate(dataloader):
+        data_sample = data_sample.float().cuda()
+        target = target.long().cuda()
         data_time.update(time.time() - end)
-        data_sample = dataloader.get_data().cuda()
         #print(data_sample.shape)
         predict = model(data_sample)
-
-        target = get_label(data_sample, converter, clientID, Body).cuda()
-
         loss = loss_function(predict, target)
         loss.backward()
         losses.update(loss.item())
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1)
         optimizer.step()
-        scheduler.step()
         batch_time.update(time.time() - end)
         end = time.time()
 
@@ -141,7 +131,38 @@ def train(model, dataloader, epoch, loss_function, optimizer, writer, scheduler,
     return losses.avg
 
 if __name__ == '__main__':
-    ip = '127.0.0.1'
+    model = CapabilityWithAttention(time_dim=16)
+    #model = Capability_Naive(space_dims=544, hidden_dims=1024, representation_dim=128)
+    #model.load_state_dict(torch.load('./params-capability/Fri Jul 17 01-17-05 2020/best_fitted_params.pt')['model_state_dict'])
+    
+    run_time = time.asctime(time.localtime(time.time())).replace(':', '-')
+    logdir = 'log-capability/' + run_time
+    if not os.path.isdir(logdir):
+        os.makedirs(logdir)
+    save_dir = 'params-capability/' + run_time
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+    writer = SummaryWriter(logdir)
+    optimizer = optim.Adam(model.parameters(), 1e-3)
+    scheduler = MinExponentialLR(optimizer, 0.99995, minimum=5e-6, last_epoch=-1)
+    loss_function = CrossEntropy()  #weight=torch.Tensor([0.8, 0.2]).cuda()
+    model.cuda()
+    gpu_num = 1
+    loss_record = 100
+    # end of initialization
+
+    for epoch in range(200):
+        dataLoader = DataLoader(unit_data_loader('./dance_unit_data.npy', './unit_stability_labels.npy'), batch_size=32, drop_last=False, shuffle=True)
+        loss = train(model, dataLoader, epoch, loss_function, optimizer, writer, scheduler)
+        scheduler.step()
+        if loss < loss_record:
+            checkpoint = save_dir + '/best_fitted_params.pt'
+            torch.save({'epoch': epoch, 'model_state_dict': model.cpu().state_dict(), 'optimizer_state_dict': optimizer.state_dict()}, checkpoint)
+            model.cuda()
+            loss_record = loss
+
+
+    """ip = '127.0.0.1'
     port = 19997
     sim.simxFinish(-1)  # just in case, close all opened connections
     clientID = sim.simxStart(ip, port, True, True, -5000, 5)
@@ -158,32 +179,6 @@ if __name__ == '__main__':
 
     converter = coordinate2angle()
     converter.set_bound(np.load('bound_range.npy'), np.load('step.npy'), 32, 16)
-    primitives = np.load('primitive_data.npy')
+    unit_data = np.load('primitive_data.npy')
 
-    model = CapabilityWithAttention(time_dim=32)
-    #model.load_state_dict(torch.load('./params-capability/Fri Jul 17 01-17-05 2020/best_fitted_params.pt')['model_state_dict'])
-    
-    run_time = time.asctime(time.localtime(time.time())).replace(':', '-')
-    logdir = 'log-capability/' + run_time
-    if not os.path.isdir(logdir):
-        os.makedirs(logdir)
-    save_dir = 'params-capability/' + run_time
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
-    writer = SummaryWriter(logdir)
-    optimizer = optim.Adam(model.parameters(), 1e-3)
-    scheduler = MinExponentialLR(optimizer, 0.99995, minimum=5e-6, last_epoch=-1)
-    loss_function = CrossEntropy()
-    model.cuda()
-    gpu_num = 1
-    loss_record = 100
-    # end of initialization
-
-    for epoch in range(5):
-        dataloader = data_loader(primitives)
-        loss = train(model, dataloader, epoch, loss_function, optimizer, writer, scheduler, converter, clientID, Body)
-        if loss < loss_record:
-            checkpoint = save_dir + '/best_fitted_params.pt'
-            torch.save({'epoch': epoch, 'model_state_dict': model.cpu().state_dict(), 'optimizer_state_dict': optimizer.state_dict()}, checkpoint)
-            model.cuda()
-            loss_record = loss
+    get_label(unit_data, converter, clientID, Body)"""
