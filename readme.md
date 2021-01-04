@@ -1,6 +1,6 @@
 # Humanoid Robot Dance Control over Real-Time Musc Stimulation
 
-## Amendment July 2020
+## Major Amendment July 2020
 
 1) Apply **Unit Selection** for the incremental generation of robotic dance;
 2) Exploit **dot-product attention** to distinguish potential conflicts among the robot's joint angles, and there for predict its stability when a motion unit is performed.
