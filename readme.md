@@ -25,7 +25,7 @@ This work is the project implementation for AU332 Aritificial Intelligence Lectu
 A high-level presentation of our work is shown in the figure below:
 
 <div align=center>
-<img src="Final Report Latex Source Code/diagram.png" width = "60%" />
+<img src="Final Report Latex Source Code/diagram.jpg" width = "60%" />
 </div>
 
 ## 2. Code and File Arrangement
