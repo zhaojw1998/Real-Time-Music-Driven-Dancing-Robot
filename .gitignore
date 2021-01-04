@@ -5,7 +5,8 @@ dance_videos/*
 danceprimitives/*
 danceprimitives_trial/*
 MyNao/motion_glance/*
-Final Report Latex Source Code/*
+*.pdf
+*.pptx
 *.png
 *.npy
 *.mp4
